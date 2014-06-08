@@ -21,8 +21,8 @@ angular.module('YourApp', ['hashtagify']);
 ```html
 <div ng-bind-html="trustHtml(tag.text)"
      hashtagify 
-     tag-term-click="tagTermClick($event)" 
-     tag-user-click="tagUserClick($event)">
+     term-click="tagTermClick($event)" 
+     user-click="tagUserClick($event)">
 </div>
 ```
 

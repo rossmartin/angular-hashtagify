@@ -7,8 +7,8 @@ angular.module('hashtagify')
         return {
             restrict: 'A',
             scope: {
-                userClick: '&tagUserClick',
-                termClick: '&tagTermClick'
+                uClick: '&userClick',
+                tClick: '&termClick'
             },
             link: function(scope, element, attrs) {
                 $timeout(function() {
@@ -18,12 +18,12 @@ angular.module('hashtagify')
                         return false;
                     }
 
-                    if (attrs.tagUserClick) {
-                        html = html.replace(/(|\s)*@(\w+)/g, '$1<a ng-click="userClick({$event: $event})" class="hashtag">@$2</a>'); 
+                    if (attrs.userClick) {
+                        html = html.replace(/(|\s)*@(\w+)/g, '$1<a ng-click="uClick({$event: $event})" class="hashtag">@$2</a>'); 
                     }
                     
-                    if (attrs.tagTermClick) {
-                        html = html.replace(/(^|\s)*#(\w+)/g, '$1<a ng-click="termClick({$event: $event})" class="hashtag">#$2</a>');
+                    if (attrs.termClick) {
+                        html = html.replace(/(^|\s)*#(\w+)/g, '$1<a ng-click="tClick({$event: $event})" class="hashtag">#$2</a>');
                     }
 
                     element.html(html);
