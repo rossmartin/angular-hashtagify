@@ -64,7 +64,6 @@ angular.module('YourApp.controllers')
         };
     }
 ]);
-
 ```
 
 ## Build
