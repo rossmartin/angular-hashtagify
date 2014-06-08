@@ -1,0 +1,29 @@
+{
+  "name": "angular-hashtagify",
+  "version": "0.0.1",
+  "description": "Angular directive that enables hashtag support for your app.",
+  "main": "angular-hashtagify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angularjs",
+    "angular",
+    "directive",
+    "hashtag",
+    "hashtags"
+  ],
+  "author": "Ross Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rossmartin/angular-hashtagify/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.7.0",
+    "gulp-jshint": "^1.6.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.0"
+  },
+  "readmeFilename": "readme.md",
+  "homepage": "https://github.com/rossmartin/angular-hashtagify"
+}
